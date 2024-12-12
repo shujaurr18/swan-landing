@@ -1,7 +1,7 @@
 import React from 'react';
 import bgHero from '../src/assets/herobg.png'
 import QrCode from '../src/assets/Swan Transparent QR White PNG 1.png'
-import iPhoneMockup from '../src/assets/phone.png' // Add your iPhone mockup image
+import iPhoneMockup from '../src/assets/Phone.png' // Add your iPhone mockup image
 import chatImage from '../src/assets/chatImage.jpg' // Add your iPhone mockup image
 import coupleImage from '../src/assets/couple.png' // Add your iPhone mockup image
 
