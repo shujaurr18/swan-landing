@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'baloo': ['"Baloo Bhaijaan 2"', 'sans-serif'],
+      },
+
+    },
   },
   plugins: [],
 }

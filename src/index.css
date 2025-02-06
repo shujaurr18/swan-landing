@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Caveat:wght@400..700&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 /* Add to your index.css or custom CSS file */
 .slider-container {
