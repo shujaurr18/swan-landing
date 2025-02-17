@@ -1,8 +1,8 @@
 import React from 'react';
-import bgHero from '../src/assets/bggig.gif'
+import bgHero from '../src/assets/Slider.mp4'
 import QrCode from '../src/assets/Swan Transparent QR White PNG 1.png'
 import iPhoneMockup from '../src/assets/Phone.png' // Add your iPhone mockup image
-import chatImage from '../src/assets/chatImage.jpg' // Add your iPhone mockup image
+import chatImage from '../src/assets/Slider 2.mp4' // Add your iPhone mockup image
 import coupleImage from '../src/assets/couple.png' // Add your iPhone mockup image
 import bgseccond from '../src/assets/bgseccond.png' // Add your iPhone mockup image
 import chatrightimage from '../src/assets/chatrightimage.png' // Add your iPhone mockup image
@@ -106,22 +106,18 @@ const LandingPage = () => {
       {/* Hero Section */}
       <div className="h-screen w-full relative overflow-hidden">
         {/* Image Container */}
-      <div className="absolute inset-0">
-          <div className="w-full h-full" style={{
-            background: `url(${bgHero})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            animation: 'seamlessLoop 0.01s steps(1) infinite',
-            WebkitAnimation: 'seamlessLoop 0.01s steps(1) infinite',
-          }} />
-          <style jsx>{`
-            @keyframes seamlessLoop {
-              0% { opacity: 1; }
-              99.99% { opacity: 1; }
-              100% { opacity: 1; }
-            }
-          `}</style>
-        </div>
+        <div className="absolute inset-0">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src={bgHero} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30">
@@ -182,10 +178,13 @@ const LandingPage = () => {
         <div className="z-10  max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
         {/* Right side - iPhone Mockup */}
         <div className="relative w-full max-w-md mx-auto">
-            <img
+            <video
+            autoPlay
               src={chatImage}
               alt="Swan App Interface"
               className="w-full h-auto py-14 px-16"
+              loop
+              muted
             />
           </div>
           {/* Left side */}
