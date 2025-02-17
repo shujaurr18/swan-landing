@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAppleWhole } from 'react-icons/fa6';
 import { FaApple } from 'react-icons/fa';
+import TestimonialCarousel from './TestimonialCarousel';
 
 const testimonials = [
     {
@@ -29,65 +30,7 @@ const testimonials = [
     // Add more testimonials as needed
   ];
   
-  const TestimonialCarousel = () => {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-    //   customPaging: (i) => (
-    //     <div className="h-1 w-20 bg-gray-300 rounded-full">
-    //       <div className="h-full w-full bg-gray-800 rounded-full transform scale-x-0 transition-transform duration-500"></div>
-    //     </div>
-    //   )
-    };
-  
-    return (
-      <div className=" mx-auto px-12 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        {/* Left side - Testimonial content */}
-        <div className="w-full col-span-2">
-          <h3 className="text-gray-600 text-xl mb-12">Don't just take it from us...</h3>
-          <Slider {...settings}>
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="outline-none pr-8">
-                <div className="text-6xl font-serif text-gray-300 mb-4">"</div>
-                <p className="text-3xl font-medium mb-8 leading-relaxed">
-                  {testimonial.text}
-                </p>
-                <p className="text-xl font-medium">{testimonial.author}</p>
-                
-                {/* Progress indicators */}
-                <div className="flex gap-2 mt-8">
-                  <div className="w-32 h-1 bg-black rounded-full" />
-                  <div className="w-32 h-1 bg-gray-200 rounded-full" />
-                  <div className="w-32 h-1 bg-gray-200 rounded-full" />
-                  <div className="w-32 h-1 bg-gray-200 rounded-full" />
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
 
-        {/* Right side - User Image */}
-        <div className="hidden md:block relative h-full">
-          <div className="relative w-full h-[500px]  overflow-hidden rounded-lg">
-            <img
-              src={userimage}
-              alt="User testimonial"
-              className="w-full h-full object-cover"
-            />
-      
-      
-          </div>
-        </div>
-      </div>
-    </div>
-    );
-  };
   
   
 const LandingPage = () => {
